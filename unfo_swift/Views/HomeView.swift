@@ -14,7 +14,8 @@ struct HomeView: View {
             
             cardArea
                 .overlay(titleArea, alignment: .top)
-
+            
+            
             navigationArea
         }
         
@@ -49,7 +50,7 @@ extension HomeView {
                                 Spacer()
                                 Image(systemName: "ellipsis")
                                     .resizable()
-                                    .frame(width: 20, height: 5)
+                                    .frame(width: 20, height: 4)
                             }
                             .padding(5)
 //                            .background(Color("Accent"))

@@ -19,6 +19,9 @@
 		54C8525A2C46E27F00087242 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852572C46E27F00087242 /* User.swift */; };
 		54C8525C2C46E28700087242 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8525B2C46E28700087242 /* ChatViewModel.swift */; };
 		54C8525E2C46E30200087242 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8525D2C46E30200087242 /* SwiftUIView.swift */; };
+		54C852602C477F9900087242 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8525F2C477F9900087242 /* AddView.swift */; };
+		54C852622C47917000087242 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852612C47917000087242 /* SettingsView.swift */; };
+		54C852642C47929A00087242 /* NavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852632C47929A00087242 /* NavigateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		54C852572C46E27F00087242 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		54C8525B2C46E28700087242 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		54C8525D2C46E30200087242 /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		54C8525F2C477F9900087242 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		54C852612C47917000087242 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		54C852632C47929A00087242 /* NavigateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +95,11 @@
 		54C852472C46E15500087242 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				54C8524B2C46E1FA00087242 /* ListView.swift */,
-				54C8524C2C46E1FB00087242 /* MessageRow.swift */,
-				54C8525D2C46E30200087242 /* SwiftUIView.swift */,
+				54C852652C47950800087242 /* FirstApp */,
 				54C8523B2C46D9ED00087242 /* HomeView.swift */,
+				54C8525F2C477F9900087242 /* AddView.swift */,
+				54C852612C47917000087242 /* SettingsView.swift */,
+				54C852632C47929A00087242 /* NavigateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +128,16 @@
 				54C8525B2C46E28700087242 /* ChatViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		54C852652C47950800087242 /* FirstApp */ = {
+			isa = PBXGroup;
+			children = (
+				54C8524B2C46E1FA00087242 /* ListView.swift */,
+				54C8524C2C46E1FB00087242 /* MessageRow.swift */,
+				54C8525D2C46E30200087242 /* SwiftUIView.swift */,
+			);
+			path = FirstApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +213,7 @@
 			files = (
 				54C8524F2C46E1FB00087242 /* MessageRow.swift in Sources */,
 				54C8523C2C46D9ED00087242 /* HomeView.swift in Sources */,
+				54C852602C477F9900087242 /* AddView.swift in Sources */,
 				54C8525E2C46E30200087242 /* SwiftUIView.swift in Sources */,
 				54C852592C46E27F00087242 /* Chat.swift in Sources */,
 				54C8523A2C46D9ED00087242 /* unfo_swiftApp.swift in Sources */,
@@ -203,6 +221,8 @@
 				54C852582C46E27F00087242 /* Message.swift in Sources */,
 				54C8525C2C46E28700087242 /* ChatViewModel.swift in Sources */,
 				54C8524E2C46E1FB00087242 /* ListView.swift in Sources */,
+				54C852642C47929A00087242 /* NavigateView.swift in Sources */,
+				54C852622C47917000087242 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
