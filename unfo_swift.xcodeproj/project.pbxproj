@@ -7,40 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		548036112C4840DA00C55C3D /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548036102C4840DA00C55C3D /* CardListView.swift */; };
 		54C8523A2C46D9ED00087242 /* unfo_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852392C46D9ED00087242 /* unfo_swiftApp.swift */; };
 		54C8523C2C46D9ED00087242 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8523B2C46D9ED00087242 /* HomeView.swift */; };
 		54C8523E2C46D9EF00087242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C8523D2C46D9EF00087242 /* Assets.xcassets */; };
 		54C852412C46D9EF00087242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C852402C46D9EF00087242 /* Preview Assets.xcassets */; };
-		54C8524E2C46E1FB00087242 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8524B2C46E1FA00087242 /* ListView.swift */; };
-		54C8524F2C46E1FB00087242 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8524C2C46E1FB00087242 /* MessageRow.swift */; };
 		54C852532C46E27600087242 /* chatData.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C852512C46E27500087242 /* chatData.json */; };
-		54C852582C46E27F00087242 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852552C46E27F00087242 /* Message.swift */; };
-		54C852592C46E27F00087242 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852562C46E27F00087242 /* Chat.swift */; };
-		54C8525A2C46E27F00087242 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852572C46E27F00087242 /* User.swift */; };
-		54C8525C2C46E28700087242 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8525B2C46E28700087242 /* ChatViewModel.swift */; };
-		54C8525E2C46E30200087242 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8525D2C46E30200087242 /* SwiftUIView.swift */; };
 		54C852602C477F9900087242 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C8525F2C477F9900087242 /* AddView.swift */; };
 		54C852622C47917000087242 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852612C47917000087242 /* SettingsView.swift */; };
 		54C852642C47929A00087242 /* NavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852632C47929A00087242 /* NavigateView.swift */; };
+		54C852692C47A8D800087242 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C852682C47A8D800087242 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		548036102C4840DA00C55C3D /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		54C852362C46D9ED00087242 /* unfo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unfo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C852392C46D9ED00087242 /* unfo_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unfo_swiftApp.swift; sourceTree = "<group>"; };
 		54C8523B2C46D9ED00087242 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		54C8523D2C46D9EF00087242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C852402C46D9EF00087242 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		54C8524B2C46E1FA00087242 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		54C8524C2C46E1FB00087242 /* MessageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		54C852512C46E27500087242 /* chatData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chatData.json; sourceTree = "<group>"; };
-		54C852552C46E27F00087242 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		54C852562C46E27F00087242 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		54C852572C46E27F00087242 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		54C8525B2C46E28700087242 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
-		54C8525D2C46E30200087242 /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		54C8525F2C477F9900087242 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		54C852612C47917000087242 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		54C852632C47929A00087242 /* NavigateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateView.swift; sourceTree = "<group>"; };
+		54C852682C47A8D800087242 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +85,11 @@
 		54C852472C46E15500087242 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				54C852652C47950800087242 /* FirstApp */,
 				54C8523B2C46D9ED00087242 /* HomeView.swift */,
 				54C8525F2C477F9900087242 /* AddView.swift */,
 				54C852612C47917000087242 /* SettingsView.swift */,
 				54C852632C47929A00087242 /* NavigateView.swift */,
+				548036102C4840DA00C55C3D /* CardListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,9 +105,7 @@
 		54C852492C46E1D100087242 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				54C852562C46E27F00087242 /* Chat.swift */,
-				54C852552C46E27F00087242 /* Message.swift */,
-				54C852572C46E27F00087242 /* User.swift */,
+				54C852682C47A8D800087242 /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,19 +113,8 @@
 		54C8524A2C46E1D400087242 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				54C8525B2C46E28700087242 /* ChatViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		54C852652C47950800087242 /* FirstApp */ = {
-			isa = PBXGroup;
-			children = (
-				54C8524B2C46E1FA00087242 /* ListView.swift */,
-				54C8524C2C46E1FB00087242 /* MessageRow.swift */,
-				54C8525D2C46E30200087242 /* SwiftUIView.swift */,
-			);
-			path = FirstApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,17 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C8524F2C46E1FB00087242 /* MessageRow.swift in Sources */,
 				54C8523C2C46D9ED00087242 /* HomeView.swift in Sources */,
 				54C852602C477F9900087242 /* AddView.swift in Sources */,
-				54C8525E2C46E30200087242 /* SwiftUIView.swift in Sources */,
-				54C852592C46E27F00087242 /* Chat.swift in Sources */,
+				54C852692C47A8D800087242 /* Card.swift in Sources */,
 				54C8523A2C46D9ED00087242 /* unfo_swiftApp.swift in Sources */,
-				54C8525A2C46E27F00087242 /* User.swift in Sources */,
-				54C852582C46E27F00087242 /* Message.swift in Sources */,
-				54C8525C2C46E28700087242 /* ChatViewModel.swift in Sources */,
-				54C8524E2C46E1FB00087242 /* ListView.swift in Sources */,
 				54C852642C47929A00087242 /* NavigateView.swift in Sources */,
+				548036112C4840DA00C55C3D /* CardListView.swift in Sources */,
 				54C852622C47917000087242 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

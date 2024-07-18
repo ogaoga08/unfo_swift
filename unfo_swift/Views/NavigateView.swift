@@ -15,7 +15,7 @@ struct NavigateView: View {
                     Image(systemName: "rectangle.stack")
                     Text("カード一覧")
                 }
-            AddView(selectedDate: Date())
+            AddView()
                 .tabItem {
                     Image(systemName: "rectangle.badge.plus")
                     Text("追加する")
@@ -26,6 +26,7 @@ struct NavigateView: View {
                     Text("その他")
                 }
         }
+        .modelContainer(for: Card.self)
     }
 }
 

@@ -9,20 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-//        VStack {
-//            HStack {
-//                Spacer()
-//                Circle()
-//                    .frame(width:30,height: 30)
-//                Spacer()
-//            }
-//            Spacer()
-//        }
-//        .background(Color("Background"))
-//        
-//        Spacer()
-//            .overlay(titleArea, alignment: .top)
-        navigationArea
+        Text("ここはSettings.Viewです")
     }
 }
 

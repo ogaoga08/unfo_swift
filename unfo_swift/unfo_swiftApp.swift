@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct unfo_swiftApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            NavigateView()
+                .modelContainer(for: Card.self)
         }
     }
 }
