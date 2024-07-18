@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct NavigateView: View {
+    init() {
+        let appearance: UITabBarAppearance = UITabBarAppearance()
+        appearance.configureWithDefaultBackground()
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+        UITabBar.appearance().standardAppearance = appearance
+       }
     var body: some View {
         TabView{
             HomeView()
                 .tabItem {
                     Image(systemName: "rectangle.stack")
                     Text("カード一覧")
+                    
                 }
             AddView()
                 .tabItem {
@@ -28,6 +35,7 @@ struct NavigateView: View {
         }
         .modelContainer(for: Card.self)
     }
+        
 }
 
 #Preview {

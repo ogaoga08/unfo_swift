@@ -11,11 +11,12 @@ import SwiftData
 struct CardListView: View {
     @Query private var cards: [Card]
     @Environment(\.modelContext) private var context
+    @State private var tappedCardId: PersistentIdentifier?
     
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView{
-                VStack{
+                VStack {
                     ForEach (cards) { card in
                         VStack {
                             HStack {
@@ -23,9 +24,9 @@ struct CardListView: View {
                                 Button(action: {
                                         delete(card: card)
                                 }, label: {
-                                    Image(systemName: "ellipsis")
+                                    Image(systemName: "minus.circle")
                                         .resizable()
-                                        .frame(width: 20, height: 4)
+                                        .frame(width: 20, height: 20)
                                 })
                                 
                             }
@@ -36,11 +37,21 @@ struct CardListView: View {
                                     .frame(width: 24, height: 24)
                                 Spacer()
                                 VStack {
-                                    Text("\(card.wordBack)")
-                                        .font(.title2)
-                                    Text("\(card.wordFront)")
-                                        .font(.title)
-                                        .padding(42)
+                                    if tappedCardId == card.id {
+                                        Text("\(card.wordBack)")
+                                            .font(.title)
+                                            .padding(42)
+                                            .onTapGesture {
+                                                tappedCardId = nil
+                                            }
+                                    } else {
+                                        Text("\(card.wordFront)")
+                                            .font(.title)
+                                            .padding(42)
+                                            .onTapGesture {
+                                                tappedCardId = card.id
+                                            }
+                                    }
                                 }
                                 
                                 Spacer()
@@ -50,7 +61,7 @@ struct CardListView: View {
                             }
                             VStack {
                                 HStack {
-                                    Text("#\(card.tag)")
+                                    Text("#\(card.wordTag)")
                                 }
                                 Capsule()
                                     .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
@@ -65,13 +76,14 @@ struct CardListView: View {
                 }
                 .padding(.top, 72)
             }
-            .padding(24)
+            .padding(.horizontal, 24)
             .background(Color("Background"))
         }
     }
     
     private func delete(card: Card) {
         context.delete(card)
+//        try? context.save()
     }
 }
 

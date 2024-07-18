@@ -15,7 +15,7 @@ struct AddView: View {
     
     @State private var newWordFront = ""
     @State private var newWordBack = ""
-    @State private var newTag = ""
+    @State private var newWordTag = ""
     
     var body: some View {
         VStack(spacing:0){
@@ -23,6 +23,7 @@ struct AddView: View {
                 .overlay(titleArea, alignment: .top)
 //            navigationArea
         }
+        .modelContainer(for: Card.self)
     }
 }
 
@@ -58,7 +59,7 @@ extension AddView {
                 HStack {
                     Text("タグ")
                     Spacer()
-                    TextField("#", text: $newTag)
+                    TextField("#", text: $newWordTag)
                         .padding(8)
                         .frame(width: 115,height: 35)
                         .background(Color(uiColor: .secondarySystemBackground))
@@ -78,7 +79,7 @@ extension AddView {
             .padding(24)
             
             Button(action: {
-                add(card: newWordFront)
+                add(nwf: newWordFront, nwb: newWordBack, nwt: newWordTag)
             }, label: {
                 Text("追加")
                     .padding()
@@ -89,12 +90,15 @@ extension AddView {
             Spacer()
         }
         .background(Color("Background"))
-        
     }
 
-        private func add(card: String) {
-            let data = Card(wordFront: card, wordBack: card, tag: card)
+    private func add(nwf: String, nwb: String, nwt: String) {
+            let data = Card(wordFront: nwf, wordBack: nwb, wordTag: nwt)
             context.insert(data)
+
+            newWordFront = ""
+            newWordBack = ""
+            newWordTag = ""
         }
     
         private func delete(card: Card) {

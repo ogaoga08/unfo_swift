@@ -9,18 +9,18 @@ import Foundation
 import SwiftData
 
 @Model
-final class Card {
-//    let id: String
+final class Card: Identifiable {
+    var id: UUID = UUID()
     let wordFront: String
     let wordBack: String
-    let tag: String
+    let wordTag: String
 //    let date: Date
     
-    init(wordFront: String, wordBack: String, tag: String) {
+    init(wordFront: String, wordBack: String, wordTag: String) {
 //        self.id = id
         self.wordFront = wordFront
         self.wordBack = wordBack
-        self.tag = tag
+        self.wordTag = wordTag
 //        self.date = date
     }
     
